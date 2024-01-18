@@ -1,6 +1,7 @@
 .start-panel {
     display: grid;
-    grid-template-columns: 50px minmax(170px, auto) 500px;
+    column-gap: 5px;
+    grid-template-columns: 50px minmax(170px, auto) minmax(500px, auto);
 }
 .start-panel__icons {
     display: grid;
@@ -8,9 +9,12 @@
 }
 .start-panel__grid {
     display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 .apps--office {
-
+    
 }
 .apps--web {
 
@@ -19,7 +23,11 @@
 
 }
 .apps__grid {
-
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-auto-rows: 50px;
+    column-gap: 5px;
+    row-gap: 5px;
 }
 .app--g2x2 {
 
