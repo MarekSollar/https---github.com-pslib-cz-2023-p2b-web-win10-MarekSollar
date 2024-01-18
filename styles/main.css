@@ -9,18 +9,20 @@
 }
 .start-panel__grid {
     display: grid;
-    grid-template-columns: 50% 50%;
     column-gap: 10px;
     row-gap: 10px;
+    grid-template-areas: 
+    "office other"
+    "web other";
 }
 .apps--office {
-    
+    grid-area: office;
 }
 .apps--web {
-
+    grid-area: web;
 }
 .apps--other {
-
+    grid-area: other;
 }
 .apps__grid {
     display: grid;
@@ -30,29 +32,48 @@
     row-gap: 5px;
 }
 .app--g2x2 {
-
+    grid-row: span 2;
+    grid-column: span 2;
 }
 .app--g2x1 {
-
+    grid-row: span 2;
 }
 .app--g1x2 {
-
+    grid-column: span 2;
 }
 .app--off-3 {
-
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 .app--off-4 {
-
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 .app--off-5 {
-
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 .app--in-3 {
-
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 .app--fun-2 {
-
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 .app--fun-3 {
-
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 7;
 }
